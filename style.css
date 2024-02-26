@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab:wght@300;400&family=Ubuntu:wght@500&display=swap');
+
+*{
+    font-family: 'Roboto Slab', serif;
+    margin : 0px;
+    padding : 0px;
+    box-sizing : border-box;
+    text-decoration : none;
+}
+html{
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #e6e6e6;
+}
+section{
+    min-height: 100vh;
+    padding:2rem;
+}
+
+
+.header{
+    position : fixed;
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    /* box-shadow-inset:.4rem .4rem 1rem #ccc inset,
+                      -.4rem -.4rem 1rem #fff inset; */
+    box-shadow:.4rem .4rem 1rem #ccc,
+                -.4rem -.4rem 1rem #fff;
+    width : 30%;
+    height :600px;
+    border-radius : 30px;
+
+}
+.bar{
+    margin: 6px;
+    height: 35px;
+    width: 35px;
+    /* background: aqua; */
+    border-radius: 50%;
+    box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
+    display: inline-block;
+     padding: 10px; 
+    display: none;
+}
+.bar:hover{
+    cursor : pointer;
+    color : green;
+    box-shadow: var(--box-shadow-inset);
+
+}
+/* .fas fa-bars{
+    margin: 20px;
+} */
+.user{
+    
+    text-align: center;
+    height: 50vh;
+}
+.user img{
+    box-shadow:.4rem .4rem 1rem #ccc,
+                -.4rem -.4rem 1rem #fff;
+    margin-top:10px;
+    width : 40%;
+    height : 50%;
+    padding : 2% 4%;
+    border-radius : 50%;
+
+}
+.user h3,p{
+    margin-top : 20px;
+}
+.navbar{
+    
+    display: flex;
+    flex-direction : column;
+    margin-top: 30px;
+}
+.navbar a{
+    display : inline-block;
+    color : black;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    
+    border-radius: 25px;
+    box-shadow:.4rem .4rem 1rem #ccc,
+                -.4rem -.4rem 1rem #fff;
+    
+}
+.header .navbar a:hover{
+    box-shadow: var(--box-shadow-inset);
+    color: green;
+}
+.but{
+    border: none;
+    padding: 1%;
+   font-size: 95%;
+    border-radius: 18%;
+    margin: 3% 3% 3% 43%;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
+}
+.but:hover{
+    box-shadow: var(--box-shadow-inset);
+    color: green;
+}
+.img{
+    text-align : center;
+}
+.img img{
+    width : 30px;
+    height : 30px;
+    margin-top : 20px;
+    margin-left : 10px;
+    box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
+}
+.img img: hover{
+    box-shadow: var(--box-shadow-inset);
+    cursor: pointer;
+}
+.body{
+    position: absolute;
+    left: 38%;
+    top: 10%;
+    /* margin: auto; */
+}
+.body h1{
+    font-size : 390%;
+    font-weight: bold;
+    margin-bottom:3%;
+    text-align: center;
+    color: green;
+    margin-left: 70px;
+}
+.body h3{
+    margin-left: 43px;
+    text-align: center;
+}
+.body p{
+    margin-top:5%;
+    margin-left: 70px;
+    text-align: center;
+}
+.about{
+    position: absolute;
+    left: 35%;
+    top: 120%;
+}
+.about h1{
+    font-size: 200%;
+    font-weight : bold;
+    text-align: center;
+}
+.about h1 span{
+    color: green;
+}
+.box-container{
+    display: flex;
+}
+.box-container .box{
+   width : 20%;
+   height : 20%;
+   box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
+   margin: 4%;
+    padding: 3%;
+}
+.box-container .box:hover{
+    box-shadow: var(--box-shadow-inset);
+    color:green;
+}
+.row{
+    display: flex;
+    margin: 2%;
+    padding:.5rem;
+}
+.about .row .progress{
+    flex:1 1 40rem;
+    margin:2%;
+}
+.barr {
+    box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
+    border-radius: 5rem;
+    height:2rem;
+    padding:.5rem;
+    margin:1rem 0;
+}
+.barr span{
+    display: block;
+    height: 100%;
+    background: green;
+    border-radius: 5rem;
+}
+.about .row .progress .bar-1-1 span{
+    width: 90%;
+}
+
+.about .row .progress .bar-1-2 span{
+    width: 75%;
+}
+
+.about .row .progress .bar-1-3 span{
+    width: 80%;
+}
+
+.about .row .progress .bar-2-1 span{
+    width: 95%;
+}
+
+.about .row .progress .bar-2-2 span{
+    width: 89%;
+}
+
+.about .row .progress .bar-2-3 span{
+    width: 65%;
+}
+.portfolio{
+    position: absolute;
+    left: 35%;
+    top: 260%;
+}
+.portfolio h1{
+    font-size: 200%;
+    font-weight : bold;
+    text-align: center;
+}
+.portfolio h1 span{
+    color: green;
+}
+.photo-gallery{
+    display: flex;
+    flex-direction:column;
+}
+.photo{
+    display:flex;
+}
+.photo img{
+    margin:3% 2% 3% 0;
+   
+    width:30%;
+    height: 30%;
+    padding:3%;
+    box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
+}
+.contact{
+    position: absolute;
+    left: 40%;
+    top: 360%;
+}
+.contact h1{
+    font-size: 200%;
+    font-weight : bold;
+    text-align: center;
+    padding-left: 45%;
+}
+.contact h1 span{
+    color: green;
+}
+.form{
+    margin-top: 3%;
+    box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
+    width: 150%;
+    height:40%;
+    border-radius: 10%;
+    /* border : 2px solid black; */
+    padding: 10%;
+    text-align: center;
+}
+.form h3 {
+    text-align: start;
+}
+.form  input, textarea{
+    font-size: 130%;
+    border-radius: 7%;
+    width: 70%;
+    border: none;
+    padding:0.5%;
+    margin:1%;
+    width: 70%;
+}
+.form  textarea{
+    margin-bottom: 3%;
+}
+#butt{
+    
+    margin: auto;
+}
+.footer{
+    position: absolute;
+    left: 30%;
+    top: 514%;
+    height:10%;
+    /* border: 2px solid black; */
+    width:70%;
+    text-align: center;
+    box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
+    overflow:hidden;
+}
+.footer p{
+    margin-top: 2%;
+}
+.footer p span{
+    color: green;
+   
+}
+
+
+@media screen and (max-width: 680px){
+    .bar{
+       
+        display: initial;
+        
+        
+    }
+    .header{
+        display : none;
+    }
+    .body{
+        width: max-width;
+    }
+}
+
